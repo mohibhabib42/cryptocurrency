@@ -1,0 +1,221 @@
+// Fonts
+@font-face {
+    font-family: MarkaziText;
+    src: url("./fonts//MarkaziText-VariableFont_wght.ttf");
+}
+
+
+// Navbar
+*{
+    font-family: MarkaziText;
+}
+.Navbar{
+    background-color: #212221;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding:0.5em;
+    span{
+        padding: 0.5em;
+        font-size: 1.5em;
+        font-family: MarkaziText;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        border: none;
+    }
+}
+.Loading{
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    justify-content: center;
+    h1{
+        align-self: center;
+    }
+}
+//                           HomePage
+
+.landing{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+.Intro{
+    align-self: center;
+    color: #212221;
+    width: 25vw;
+    height: fit-content;
+    h5{
+        font-size: 3em;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    button{
+        background-color: #212221;
+        font-size: 1em;
+        color: #fff;
+        border-radius: 5px;
+        padding: 1em;
+    }
+}
+.top-header{
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    h1{
+        text-align: center;
+    }
+    hr{
+        border:#fff;
+    }
+}
+.top-container{
+    padding: 20px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    gap: 0.5em;
+}
+.Coin{
+    padding: 10px;
+    background-color: #212221;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0;
+    padding: 1em;
+    h1{
+        text-align: left;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    button{
+        border-radius: 5px;
+    }
+}
+
+//                           All Coins Page
+.All-Coins{
+    font-family: MarkaziText;
+    h1{
+        padding-top: 1em;
+        text-align: center;
+    }
+}
+
+.Coins-Table{
+    width: 80%;
+    margin: auto;
+    a{
+        margin: auto;
+        text-decoration: none;
+        color: #fff;
+    }
+    th{
+        font-size: 1.3em;
+    }
+    #Red{
+        padding: 1px 10px 1px 10px;
+        border-radius: 10px;
+        background-color: #D22B2B;
+        color: #fff;
+    }
+    #Green{
+        padding: 1px 10px 1px 10px;
+        border-radius: 10px;
+        background-color: #32CD32	;
+        color: #fff;
+    }
+}
+
+
+// Information
+
+.Information{
+    h1{
+        padding-top: 1em;
+        text-align: center;
+    }
+}
+.info-container{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    div{
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .info-detail{
+        height: fit-content;
+        color: #fff;
+        background-color: #212221;
+        max-width: 50vw;
+        h1{
+            text-align: left;
+            padding-bottom: 1em;
+        }
+        img{
+            float: right;
+            padding: 0 1em 0.5em 0;
+        }
+    }
+    .info-Links{
+        color: #fff;
+        background-color: #212221;
+        height: fit-content;
+        text-align: center;
+        a{
+            margin: 0.5em;
+            border-radius: 10px;
+            text-align: center;
+            padding: 0.5em 3em 0.5em 3em;
+            display: block;
+            background-color: #fff;
+            color: #212221;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .landing{
+        height: auto;
+        flex-direction:column;
+        .Intro{
+            width: min-content;
+            text-align: center;
+            padding: 0;
+            margin: 3em 0 3em 0;
+        }
+    }
+    
+        // Information
+        
+    .info-container{
+        flex-direction: column;
+        width: 80%;
+        .info-detail{
+            align-self: center;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (max-width:600px) {
+    .top-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1em;
+    }
+}
